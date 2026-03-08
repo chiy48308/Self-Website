@@ -121,13 +121,19 @@ nav {
   font-style: italic;
   color: var(--accent);
 }
+.hero-role {
+  margin-top: 2rem;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fg);
+}
 .hero-sub {
-  margin-top: 2.4rem;
+  margin-top: 0.5rem;
   font-size: 0.78rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--muted);
-  max-width: 32ch;
 }
 .hero-slogan {
   margin-top: 2rem;
@@ -137,6 +143,40 @@ nav {
   color: var(--dim);
   letter-spacing: 0.04em;
 }
+.hero-stack {
+  margin-top: 0.8rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  color: var(--dim);
+  text-transform: uppercase;
+}
+.hero-actions {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.hero-cta {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--fg);
+  border-bottom: 1px solid var(--muted);
+  padding-bottom: 0.3rem;
+  transition: color 0.3s, border-color 0.3s;
+}
+.hero-cta:hover { color: var(--accent); border-color: var(--accent); }
+.hero-socials {
+  display: flex;
+  gap: 1.2rem;
+}
+.hero-socials a {
+  color: var(--dim);
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+}
+.hero-socials a:hover { color: var(--fg); }
 .scroll-hint {
   position: absolute;
   bottom: 3rem;
