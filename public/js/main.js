@@ -1,7 +1,7 @@
 // ── Typewriter Intro ──
 const typedEl = document.getElementById('typed');
 const intro = document.getElementById('intro');
-const text = 'introduce myself';
+const text = 'Introduce Myself';
 let i = 0;
 
 function type() {
