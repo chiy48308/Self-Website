@@ -283,18 +283,55 @@ section {
   display: flex;
   flex-direction: column;
   gap: 0;
+  margin-bottom: 2rem;
 }
-.skill-item {
+.skill-category {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   padding: 0.85rem 0;
   border-top: 1px solid var(--divider);
+  gap: 1rem;
+}
+.skill-category:last-child { border-bottom: 1px solid var(--divider); }
+.skill-cat-label {
   font-size: 0.75rem;
   letter-spacing: 0.12em;
+  text-transform: uppercase;
+  flex-shrink: 0;
 }
-.skill-item:last-child { border-bottom: 1px solid var(--divider); }
-.skill-item span { color: var(--dim); font-size: 0.65rem; }
+.skill-cat-tools {
+  color: var(--dim);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-align: right;
+}
+.about-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.tl-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--divider);
+  gap: 1rem;
+}
+.tl-item:last-child { border-bottom: 1px solid var(--divider); }
+.tl-key {
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dim);
+  flex-shrink: 0;
+}
+.tl-val {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-align: right;
+}
 
 /* ── Work ── */
 #work .work-grid {
