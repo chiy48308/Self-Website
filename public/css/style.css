@@ -1,11 +1,11 @@
 /* ── Variables ── */
 :root {
-  --bg: #0a0a0a;
-  --fg: #f0f0f0;
-  --muted: #888;
-  --dim: #444;
-  --divider: #1e1e1e;
-  --accent: #c8c8c8;
+  --bg: #141210;
+  --fg: #efefea;
+  --muted: #8a8680;
+  --dim: #4a4642;
+  --divider: #242220;
+  --accent: #d4d0c8;
   --font-display: 'Playfair Display', serif;
   --font-mono: 'DM Mono', monospace;
 }
@@ -70,7 +70,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.6rem 4vw;
-  background: linear-gradient(to bottom, rgba(10,10,10,0.95) 0%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(20,18,16,0.95) 0%, transparent 100%);
 }
 .nav-logo img {
   height: 36px;
@@ -290,7 +290,7 @@ section {
 .work-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(10,10,10,0.7);
+  background: rgba(20,18,16,0.75);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -384,7 +384,7 @@ footer p {
   .about-photo { aspect-ratio: 1/1; }
   #work .work-grid { grid-template-columns: repeat(2, 1fr); }
   .work-label { display: block; }
-  .work-overlay { opacity: 1; background: rgba(10,10,10,0.5); }
+  .work-overlay { opacity: 1; background: rgba(20,18,16,0.55); }
 }
 @media (max-width: 480px) {
   #work .work-grid { grid-template-columns: 1fr; }
